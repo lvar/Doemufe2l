@@ -13,7 +13,7 @@
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
             renderer="logarithmicDepthBuffer: true;"
-            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+            arjs="trackingMethod: best; sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;"
             id="scene"
             embedded
             gesture-detector
@@ -34,6 +34,10 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
+                smooth="true"
+                smoothCount="40"
+                smoothTolerance="0.1"
+                smoothThreshold="2"
             >
                 <a-entity
                     id="bowser-model"
